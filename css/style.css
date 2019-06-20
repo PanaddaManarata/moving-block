@@ -1,0 +1,39 @@
+#alien{
+    background-image: url(../img/ufo.svg); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    transition-timing-function: ease-in;
+    transition: 0.2s;
+
+}
+
+#planet{
+    position: absolute; 
+    background-image: url(../img/planets.svg); 
+    width: 100px; 
+    height: 100px; 
+    background-size: contain; 
+   
+}
+
+#container {
+    padding: 0;
+    height: 500px;
+    width: 750px;
+    border: 50px solid #040a12;
+    box-sizing: content-box;
+    background-color:  rgb(2, 2, 37); 
+    position: relative;
+    background-image: url(../img/universe.png); 
+    background-size: cover; 
+    /* filter: drop-shadow(0 0 1rem #04d99d); */
+}
+
+h1{
+    color: whitesmoke; 
+    text-align: center; 
+}

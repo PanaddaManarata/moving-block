@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Moving Block</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body id="body">
+    <div class="container" id="container">
+			<div id="alien"></div>
+			
+		
+    </div>
+
+
+   
+
+
+<script>
+/*
+
+var Alien= null;
+//var planetsEaten = 0; 
+//var aantalplanetsEaten = document.querySelector('#feedback'); 
+
+	function init(){
+		Alien=document.getElementById("alien"); 	
+        var block = Alien.getBoundingClientRect();	
+        console.log(block); 	
+		Alien.style.position='relative';
+		Alien.style.left='0px';
+		Alien.style.top='0px';
+	}
+var planet = document.getElementById('planet'); 
+        
+    // object has to move 
+/*function eat(){
+    var Destroyer = document.getElementById('alien').getBoundingClientRect();
+    	var destroyerTop = Destroyer.top;
+    	var destroyerLeft = Destroyer.left;
+    	var destroyerRight = Destroyer.right;
+    	var destroyerBottom = Destroyer.bottom;
+ // put position from element in var 
+
+ 	var planet = document.getElementById('planet').getBoundingClientRect();
+    	var planetTop = planet.top;
+    	var planetLeft = planet.left;
+    	var planetRight = planet.right;
+    	var planetBottom = planet.bottom;
+
+
+    var RandomNumberLeft = Math.floor(Math.random() * 100);
+    var RandomNumberRight = Math.floor(Math.random() * 100);
+    var RandomNumberTop = Math.floor(Math.random() * 100);
+    var RandomNumberBottom = Math.floor(Math.random() * 100);
+
+	if(destroyerTop < planetTop + destroyerLeft <= planetLeft && destroyerRight >= planetRight && destroyerBottom >= planetBottom  ){
+
+
+	planet.style.left = RandomNumberLeft + "%";
+	planet.style.right = RandomNumberRight + "%";
+	planet.style.top = RandomNumberTop + "%";
+	planet.style.bottom = RandomNumberBottom + "%";
+	planetsEaten ++; 
+	aantalplanetsEaten.innerHTML = planetsEaten;
+	console.log(planetsEaten);
+}
+
+
+}
+*/ 
+/*
+window.onload = randomPlanet; 
+function randomPlanet(){
+	console.log('hoi')
+	let maxWidth = window.innerWidth - planet.offsetWidth; 
+	let maxHeight = window.innerHeight - planet.offsetHeight; 
+	console.log(maxHeight); 
+
+	let RandomWidth = Math.floor(Math.random() * maxWidth); 
+	let RandomHeight = Math.floor(Math.random() * maxHeight); 
+
+	planet.style.left = RandomWidth + "px"; 
+	planet.style.top = RandomHeight + "px"; 
+
+
+
+}
+
+	function moveAlien(e){				
+		var key_code=e.which||e.keyCode;
+		switch(key_code){
+			case 37: 
+				moveLeft();
+                console.log('left')
+				break;
+			case 38:
+				moveUp();
+                console.log('up')
+				break;
+			case 39: 
+				moveRight();
+                console.log('right')
+				break;
+			case 40: 
+				moveDown();
+                console.log('down')
+				break;	
+                // get keycodes 					
+		}
+	}
+	function moveLeft(){
+		Alien.style.left=parseInt(Alien.style.left)-10 +'px';
+        eat(); 
+	}
+	function moveUp(){
+		Alien.style.top=parseInt(Alien.style.top)-10 +'px';
+        eat(); 
+    }
+	function moveRight(){
+		Alien.style.left=parseInt(Alien.style.left)+10 +'px';
+        eat(); 
+    }
+	function moveDown(){
+	
+    	Alien.style.top=parseInt(Alien.style.top)+10 +'px';
+        eat(); 
+    }
+	window.onload=init;
+
+
+*/
+</script>  
+<script src="main.js"></script> 
+</div>
+</body>
+</html>
