@@ -2,7 +2,7 @@ const container = document.getElementById('container');
 const square = document.getElementById('alien');
 const food = document.createElement('planet');
 
-document.getElementById("body").addEventListener("load", createFood());
+document.getElementById("body").addEventListener("load", Foodspawn());
 
 document.onkeydown = animate;
 
@@ -43,20 +43,21 @@ function animate(e) {
     detectCollision();
 }
 
-function createFood() {
+function Foodspawn() {
     food.id = 'planet';
-
+    // created div will be assigned 'planet' id 
     randomX = Math.floor(Math.random() * (13) + 1) * 50;
     randomY = Math.floor(Math.random() * (7) + 2) * 50;
-
+    // makes random positions 
     food.style.left = randomX + 'px';
     food.style.top = randomY + 'px';
-
+    // left and top will get random position 
     container.appendChild(food);
+    // put created div in container 
 }
 
 function detectCollision() {
     if (squareLeft === randomX && squareTop === randomY) {
-        createFood();
+        Foodspawn();
     }
 }
