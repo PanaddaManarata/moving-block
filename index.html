@@ -17,11 +17,6 @@
 			
 		
     </div>
-
-
-   
-
-
 <script>
 /*
 
@@ -97,41 +92,25 @@ function randomPlanet(){
 		var key_code=e.which||e.keyCode;
 		switch(key_code){
 			case 37: 
-				moveLeft();
+				Alien.style.left=parseInt(Alien.style.left)-10 +'px';
                 console.log('left')
 				break;
 			case 38:
-				moveUp();
+				Alien.style.top=parseInt(Alien.style.top)-10 +'px';
                 console.log('up')
 				break;
 			case 39: 
-				moveRight();
+				Alien.style.left=parseInt(Alien.style.left)+10 +'px';
                 console.log('right')
 				break;
 			case 40: 
-				moveDown();
+				Alien.style.top=parseInt(Alien.style.top)+10 +'px';
                 console.log('down')
 				break;	
                 // get keycodes 					
 		}
 	}
-	function moveLeft(){
-		Alien.style.left=parseInt(Alien.style.left)-10 +'px';
-        eat(); 
-	}
-	function moveUp(){
-		Alien.style.top=parseInt(Alien.style.top)-10 +'px';
-        eat(); 
-    }
-	function moveRight(){
-		Alien.style.left=parseInt(Alien.style.left)+10 +'px';
-        eat(); 
-    }
-	function moveDown(){
 	
-    	Alien.style.top=parseInt(Alien.style.top)+10 +'px';
-        eat(); 
-    }
 	window.onload=init;
 
 
